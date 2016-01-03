@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html ng-app = "helloApp">
+<html ng-app = "myApp">
 <head>
 	<title>Angular Demo</title>
 	<script type="text/javascript" src="lib/angular/angular.min.js"></script>
-	<script>
-	//create angular module
-	var helloApp = angular.module();
-
-
-	</script>
+	<script type="text/javascript" src="js/controllers.js"></script>
 </head>
 <body>
 
-<input type="text" ng-model = "name">
-<p>Welcome {{name}}</p>
+<div ng-controller = "myController">
+Welcome 
 
-{{2 + 4}} 
+	{{firstName + " " +	jobTitle + " " + skills }}
+
+</div>
 </body>
 </html>
