@@ -17,3 +17,12 @@
     depth: 98,
     time: 62
   }];
+
+var diveLog = angular.module('diveLog', []);
+diveLog.controller('diveLogCtrl', DiveLogCtrl);
+
+function DiveLogCtrl($scope) {
+      $scope.dives = dives;
+    }
+
+
