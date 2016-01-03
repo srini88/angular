@@ -1,5 +1,8 @@
-var myApp = angular.module("myApp",[]);
-myApp.controller("myController", function myController ($scope, $http){
+
+
+
+var artistControllers = angular.module("artistControllers",[]);
+artistControllers.controller("ListController", function myController ($scope, $http){
 	//using http service - handle communication between http server and a client
 	$http.get("js/data.json")
 	.then(function(response){
