@@ -4,5 +4,7 @@ myApp.controller("myController", function myController ($scope, $http){
 	$http.get("js/data.json")
 	.then(function(response){
 		$scope.artists = response.data;
+		$scope.artistOrder = 'name';   //by default setting artistOrder by name 
+		$scope.direction = '';  //by default ascending
 	});
 });
