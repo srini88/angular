@@ -4,14 +4,21 @@
 	<title>Angular Demo</title>
 	<script type="text/javascript" src="lib/angular/angular.min.js"></script>
 	<script type="text/javascript" src="js/controllers.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
-<div ng-controller = "myController">
-Welcome 
+<div class = "main" ng-controller = "myController">
+<ul class="artistlist">
+	<li class="artist cf" ng-repeat = "item in artists">
+		<img ng-src="images/{{item.shortname}}_tn.jpg" alt = "photo of {{item.name}}">	
+		<div class="info">
+			<h2>{{item.name}} </h2>
+			<h2>{{item.reknown}} </h2>
+		</div>
+	</li>
 
-	{{firstName + " " +	jobTitle + " " + skills }}
-
+</ul>
 </div>
 </body>
 </html>
