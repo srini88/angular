@@ -1,4 +1,4 @@
 # angular
 Sample Angular application from Scratch 
 
-used the tutorial from Lynda.com
+search artists from a json file 
