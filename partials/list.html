@@ -22,11 +22,14 @@
 
 	<ul class="artistlist">
 		<li class="artist cf" ng-repeat = "item in artists | filter :searchQuery |orderBy : artistOrder :direction">
+		<!-- get to the artists array and get the index of that goddamn item -->
+		<a href="#/details/{{artists.indexOf(item)}}">
 			<img ng-src="images/{{item.shortname}}_tn.jpg" alt = "photo of {{item.name}}">	
 			<div class="info">
 				<h2>{{item.name}} </h2>
 				<h3>{{item.reknown}} </h2>
 			</div>
+		</a>
 		</li>
 	</ul>
 </section>
