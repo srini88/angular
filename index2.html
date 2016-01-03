@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app = "myApp">
+<head>
+	<title>angular demo</title>
+	<script type="text/javascript" src="lib/angular/angular.min.js"></script>
+	<script>
+	var app = angular.module('myApp',[]);
+	app.controller("myCtrl", function($scope){
+
+
+		$scope.student = {
+			firstName: "Srinivas",
+			lastName: "PV",
+			grade: "fail",
+			subjects:[
+			{name:'Physics',marks:70},
+         	{name:'Chemistry',marks:80},
+         	{name:'Math',marks:65},
+         	{name:'English',marks:75},
+         	{name:'Hindi',marks:67}
+			]
+		}; 
+		});
+	
+	</script>
+</head>
+<body>
+<div ng-controller = "myCtrl">
+{{2+2}}
+{{student.firstName + " "+ student.latName + "" + student.grade}}
+<hr>
+
+{{student.subjects}}
+
+</div>
+
+<!--output 
+4 Srinivas fail
+[{"name":"Physics","marks":70},{"name":"Chemistry","marks":80},{"name":"Math","marks":65},{"name":"English","marks":75},{"name":"Hindi","marks":67}] -->
+</body>
+</html>
