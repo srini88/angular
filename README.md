@@ -1,4 +1,7 @@
 # angular
 Sample Angular application from Scratch 
 
-search artists from a json file 
+search artists that are fetched from a json file using angular's http service 
+
+
+
